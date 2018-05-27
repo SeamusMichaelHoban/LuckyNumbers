@@ -94,10 +94,12 @@ namespace LuckyNumbers
             if (correctGuesses == 6)
             {
                 Console.WriteLine("You've won the Jackpot!!");
+                Console.WriteLine("You've won $" + jackpotAmount + "!!!!!!");
             }
             else
             {
                 Console.WriteLine("You guessed " + correctGuesses + " correctly.");
+                Console.WriteLine("You've won $0.");
             }
            
             Console.WriteLine("Would you like to play again?");
