@@ -81,7 +81,7 @@ namespace LuckyNumbers
             }
 
             Console.WriteLine();
-            Console.WriteLine(correctGuesses);
+            Console.WriteLine("Correct guesses: " + correctGuesses);
             Console.ReadLine();
 
             //Logic Requirments
