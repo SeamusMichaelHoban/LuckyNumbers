@@ -47,7 +47,7 @@ namespace LuckyNumbers
                 {
                     Console.WriteLine("Invalid input, please pick a number between 1-80");
                     Console.WriteLine("Please pick a ending number");
-                    userLowNum = int.Parse(Console.ReadLine());
+                    userHighNum = int.Parse(Console.ReadLine());
                 }
 
 
