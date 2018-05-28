@@ -43,7 +43,7 @@ namespace LuckyNumbers
                 Console.WriteLine("Please pick a ending number");
                 userHighNum = int.Parse(Console.ReadLine());
 
-                while (userHighNum < 1 || userHighNum > 80 || userHighNum <= userLowNum + 6)
+                while (userHighNum > 80 || userHighNum <= userLowNum + 6)
                 {
                     Console.WriteLine("Invalid input, please pick a number between 1-80");
                     Console.WriteLine("Please pick a ending number");
@@ -74,10 +74,15 @@ namespace LuckyNumbers
                 //r.Next(min,max)
 
                 Random r = new Random();
+
                 for (int i = 0; i < randNum.Length; i++)
+
                 {
-                    randNum[i] = r.Next(1, 81);
-                    Console.WriteLine("Lucky Number: " + r.Next(1, 81));
+
+                    randNum[i] = r.Next(1, 12);
+
+                    Console.WriteLine("Lucky Number: " + randNum[i]);
+
                 }
 
                 for (int i = 0; i < userNums.Length; i++)
